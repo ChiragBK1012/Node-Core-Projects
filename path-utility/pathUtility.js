@@ -7,13 +7,17 @@ console.log("Current file:", __filename);
 console.log("Current directory:", __dirname);
 
 // Extracting parts of a path
-const filePath = "/users/chirag/projects/node-core-projects/path-utility/pathUtility.js";
+const filePath =
+    "/users/chirag/projects/node-core-projects/path-utility/pathUtility.js";
 
 console.log("\n=== Path Parts ===");
-console.log("Base (filename):", path.basename(filePath));     // pathUtility.js
-console.log("Dirname:", path.dirname(filePath));              // /users/chirag/projects/node-core-projects/path-utility
-console.log("Extension:", path.extname(filePath));            // .js
-console.log("Filename without extension:", path.basename(filePath, path.extname(filePath))); // pathUtility
+console.log("Base (filename):", path.basename(filePath)); // pathUtility.js
+console.log("Dirname:", path.dirname(filePath)); // /users/chirag/projects/node-core-projects/path-utility
+console.log("Extension:", path.extname(filePath)); // .js
+console.log(
+    "Filename without extension:",
+    path.basename(filePath, path.extname(filePath))
+); // pathUtility
 
 // Joining paths
 console.log("\n=== Path Join ===");
@@ -27,7 +31,8 @@ console.log("Resolved Path:", resolvedPath);
 
 // Normalize paths (fixes extra slashes, dots, etc.)
 console.log("\n=== Path Normalize ===");
-const messyPath = "/users/chirag//projects/../projects/node-core-projects//path-utility/";
+const messyPath =
+    "/users/chirag//projects/../projects/node-core-projects//path-utility/";
 console.log("Messy Path:", messyPath);
 console.log("Normalized Path:", path.normalize(messyPath));
 
