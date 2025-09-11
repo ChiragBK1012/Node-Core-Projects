@@ -16,8 +16,8 @@ try {
     console.log("Appended successfully (sync).");
 
     // Delete the file
-    /* fs.unlinkSync("sync.txt");
-       console.log("File deleted successfully (sync)."); */
+    fs.unlinkSync("sync.txt");
+    console.log("File deleted successfully (sync).");
 } catch (err) {
     console.error("Error:", err.message);
 }
