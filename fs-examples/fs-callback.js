@@ -18,10 +18,10 @@ fs.writeFile("callback.txt", "Hello, written using callback!", err => {
             console.log("File appended (callback).");
 
             // Delete the file
-            /* fs.unlink("callback.txt", err => {
-                   if (err) return console.error(err);
-                   console.log("File deleted (callback).");
-               }); */
+            fs.unlink("callback.txt", err => {
+                if (err) return console.error(err);
+                console.log("File deleted (callback).");
+            });
         });
     });
 });
