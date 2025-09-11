@@ -3,11 +3,11 @@ const os = require("os");
 console.log("===== System Information =====");
 
 // OS type and platform
-console.log("OS Type:", os.type());         // e.g., Linux, Darwin, Windows_NT
+console.log("OS Type:", os.type()); // e.g., Linux, Darwin, Windows_NT
 console.log("OS Platform:", os.platform()); // e.g., win32, linux, darwin
 
 // OS release and architecture
-console.log("OS Release:", os.release());   // e.g., 10.0.22621
+console.log("OS Release:", os.release()); // e.g., 10.0.22621
 console.log("CPU Architecture:", os.arch()); // e.g., x64, arm
 
 // CPU details
