@@ -27,7 +27,7 @@ It’s meant for learning and practicing the basics of Node.js before moving on 
 │   └── pathUtility.js       # Path module usage
 ├── basic-server
 │   └── server.js            # Simple HTTP server
-│   └── serverGetPost.js         # Simple GET/POST HTTP server
+│   └── serverGetPost.js     # Simple GET/POST HTTP server
 └── README.md                # Project documentation
 ```
 
