@@ -21,6 +21,7 @@ const server = http.createServer((req, res) => {
             res.end(JSON.stringify({ message: "Data received", data: body }));
         });
     } else {
+        // Handle unknown routes
         res.writeHead(404);
         res.end(JSON.stringify({ error: "Not Found" }));
     }
