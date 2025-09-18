@@ -27,6 +27,7 @@ It’s meant for learning and practicing the basics of Node.js before moving on 
 │   └── pathUtility.js       # Path module usage
 ├── basic-server
 │   └── server.js            # Simple HTTP server
+│   └── serverGetPost.js     # Simple GET/POST HTTP server
 └── README.md                # Project documentation
 ```
 
@@ -63,6 +64,61 @@ It’s meant for learning and practicing the basics of Node.js before moving on 
    node basic-server/server.js
    ```
    Then open [http://localhost:3000](http://localhost:3000) in your browser.
+
+5. Start the simple GET/POST server:
+   ```bash
+   node basic-server/serverGetPost.js
+   ```
+   Then open [http://localhost:3001](http://localhost:3001) in your browser.
+
+---
+
+## 📌 Testing GET/POST Routes
+
+You can test the routes using **Postman**, **Insomnia**, or any HTTP client.
+
+1. **GET request**
+
+   * URL: `http://localhost:3001/`
+   * Method: GET
+   * Response:
+
+```json
+{
+  "message": "Hello from GET request!"
+}
+```
+
+2. **POST request**
+
+   * URL: `http://localhost:3001/submit`
+   * Method: POST → Body → raw → JSON
+
+Example body:
+
+```json
+{
+  "name": "Chirag",
+  "age": 21
+}
+```
+
+* Response:
+
+```json
+{
+  "message": "Data received",
+  "data": "{\n  \"name\": \"Chirag\",\n  \"age\": 21\n}"
+}
+```
+
+3. **Unknown routes** → returns 404:
+
+```json
+{
+  "error": "Not Found"
+}
+```
 
 ---
 
