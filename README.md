@@ -1,6 +1,6 @@
 # Node.js Core Modules Demo 🚀
 
-This project is a collection of simple demos showcasing **Node.js core modules** and a custom logger utility.  
+This project is a collection of simple demos showcasing **Node.js core modules** and a custom logger utility.
 It’s meant for learning and practicing the basics of Node.js before moving on to frameworks like Express.
 
 ---
@@ -123,12 +123,12 @@ Example body:
 ---
 
 ## 📌 Modules Covered
-- **fs** → File system operations  
-- **path** → Work with file and directory paths  
-- **os** → System information (CPU, memory, uptime)  
-- **crypto** → Hashing, encryption, tokens  
-- **events** → Event-driven programming  
-- **http** → Basic web server  
+- **fs** → File system operations
+- **path** → Work with file and directory paths
+- **os** → System information (CPU, memory, uptime)
+- **crypto** → Hashing, encryption, tokens
+- **events** → Event-driven programming
+- **http** → Basic web server
 
 ---
 
